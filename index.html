@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+|====================================================================================================================================|
+|██████╗ ███╗   ███╗██╗   ██╗████████╗██████╗  ██████╗     ███╗   ███╗ █████╗ ██╗      █████╗ ███╗   ██╗██╗ ██████╗ ██╗   ██╗██╗  ██╗|
+|██╔══██╗████╗ ████║╚██╗ ██╔╝╚══██╔══╝██╔══██╗██╔═══██╗    ████╗ ████║██╔══██╗██║     ██╔══██╗████╗  ██║██║██╔═══██╗██║   ██║██║ ██╔╝|
+|██║  ██║██╔████╔██║ ╚████╔╝    ██║   ██████╔╝██║   ██║    ██╔████╔██║███████║██║     ███████║██╔██╗ ██║██║██║   ██║██║   ██║█████╔╝ |
+|██║  ██║██║╚██╔╝██║  ╚██╔╝     ██║   ██╔══██╗██║   ██║    ██║╚██╔╝██║██╔══██║██║     ██╔══██║██║╚██╗██║██║██║   ██║██║   ██║██╔═██╗ |
+|██████╔╝██║ ╚═╝ ██║   ██║      ██║   ██║  ██║╚██████╔╝    ██║ ╚═╝ ██║██║  ██║███████╗██║  ██║██║ ╚████║██║╚██████╔╝╚██████╔╝██║  ██╗|
+|╚═════╝ ╚═╝     ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝|
+|====================================================================================================================================|
+                                                     ------The Website------
+-->    
+    
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->    
+    <link rel="stylesheet" href="libraries/font-awesome-4.2.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="libraries/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="libraries/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libraries/owl-carousel/owl.theme.css">
+    
+  	
+	<title>D. Malaniouk</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!--        NAVIGATION ICONS-->
+    <div id="nav">
+		<a href="#0" class="nav-trigger">Menu<span></span></a>
+
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#section1" data-number="1"><i class="fa fa-male        fa-2x"></i></a></li>
+				<li><a href="#section2" data-number="2"><i class="fa fa-file-text   fa-2x"></i></a></li>
+				<li><a href="#section3" data-number="3"><i class="fa fa-code        fa-2x"></i></a></li>
+				<li><a href="#section4" data-number="4"><i class="fa fa-wrench      fa-2x"></i></a></li>
+				<li><a href="#section5" data-number="5"><i class="fa fa-envelope    fa-2x"></i></a></li>
+			</ul>
+		</nav>
+	</div>
+
+    
+    
+    
+    <header>
+        <div id="background"></div>
+        <div class="container" >                        
+            <div class="row vertical-center">
+                <div ng-view class="col-xs-2"></div>
+                <div ng-view class="col-xs-8"> 
+                    <div>
+                        <h1>Dmytro Malaniouk</h1>
+                    </div>
+                    <span id="tag">Developer, Netflix Enthusiast, Human Being</span>
+                </div>
+                <div ng-view class="col-xs-2"></div>
+            </div>            
+            <a href="#section1" class="arrow-down scroll-down"></a>
+        </div>
+    </header>
+
+<!-- ================================================================================================================================================================================================================================================ -->
+    <section id="section1" class="about">
+        <div class="icon-item square hoverEffect top_to_bottom icon-trans" id="about-hover">
+            <div class="img"><i class="fa fa-male fa-3x"> </i></div>
+            <div class="info">
+                <h3>About</h3>
+            </div>
+        </div>        
+        <div class="about_container container vertical-center">            
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/prof.jpg" class="profile" width="65%" height="auto">
+                </div>
+                <div class="col-lg-6">
+                    <p class="bio">
+                        I am a <span id="age"> </span>-year old studying Computer Science at NJIT. 
+                        I am proficient in Software Development, Web Application Development and Server Maintenance.
+                        <br />
+                        <br />
+                        When I'm not busy wrestling bears, downhill unicycle racing with the ghost of Evel Knievel, 
+                        or spitting flows that put nerdy white kids to shame, I'm usually found doing things such as 
+                        photography, listening to good music, and learning about new and upcoming technologies.
+                        <br />
+                        <br />
+                        My passion for learning new and emerging technologies keeps me motivated and proactive. I 
+                        find that this same passion is what makes me a fast learner.
+                    </p>
+                </div>
+            </div>
+            
+            <!--img src="img/image.jpg" class="profile"     TAKE A BETTER PICTURE YA HOBO....and get a haircut      -->
+            
+
+        </div>
+    </section>
+<!-- ================================================================================================================================================================================================================================================ -->
+    <section id="section2" class="timeline">
+        
+        <div class="icon-item square hoverEffect top_to_bottom">
+            <div class="img"><i class="fa fa-file-text fa-3x"> </i></div>
+            <div class="info">
+                <h3>Resume</h3>
+            </div>
+        </div>
+        
+        <div class="timeline-container">
+            <!-- ************************************************************************************************************************ -->            
+            <div class="timeline-block">
+                <div class="timeline-img school">
+                    <img src="img/library.svg" alt="school">
+                </div>
+                
+                <div class="timeline-content">
+                 
+                    <!--MAYBE INCLUDE A LOGO HERE OR SOMETHING-->
+                 
+                    <h2>NJIT</h2>
+				    <p>
+                        B.S Computer Science<br>
+                        Albert Dorman Honor's College Scholar<br>
+                    </p>
+                    <span class="date">Sept 2011 - May 2014</span>
+                </div>
+            </div> 
+            
+            <!-- ************************************************************************************************************************ -->
+            
+            <div class="timeline-block">
+                <div class="timeline-img verizon">
+                    <img src="img/cabinet.svg" alt="verizon">
+                </div>
+                
+                <div class="timeline-content">
+                    <h2>Verizon Wireless</h2>
+                    <p>
+                        IT Intern (POS team)
+                    </p>
+                    <ul>
+                        <li>Developed web apps for server performance</li>
+                        <li>Developed Python scripts to generated Erate reporting</li>
+                        <li>Generated reports for Telesales support using Python</li>
+                        <li>Developed PHP app for team reporting</li>
+                    </ul>
+                    <span class="date">June 2013 - Aug 2013</span>
+                </div>
+            </div>
+            
+            <!-- ************************************************************************************************************************ -->
+            
+            <div class="timeline-block">
+                <div class="timeline-img tiaacref">
+                    <img src="img/banknote.svg" alt="tiaacref">
+                </div> 
+                
+                <div class="timeline-content">
+                    <h2>TIAA-CREF</h2>
+                    <p>
+                        IT Intern (Enterprise Architecture team)
+                    </p>
+                    <ul>
+                        <li>Compose manuals for developer environments</li>
+                        <li>Develop and configure SDLC demonstrations</li>
+                        <li>Develop Map Reduce applications</li>
+                        <li>Set up Hadoop development/production environments</li>
+                    </ul>                    
+                    <span class="date">June 2014 - Aug 2014</span>
+                </div> 
+            </div>
+            
+            <!-- ************************************************************************************************************************ -->
+            <div class="timeline-block">
+                <div class="timeline-img location">
+                    <img src="img/food.svg" alt="Location">
+                </div> 
+              
+                <div class="timeline-content">
+                    <h2>NomNoms</h2>
+				    <p>Creator / Lead Systems Developer / Lead Android Developer </p>
+                    <span class="date">October 2014 - Present</span>
+                </div> 
+            </div>
+        
+        <!-- ************************************************************************************************************************ -->
+    
+        <!-- TEMPLATE======================================================================================================================== -
+		<div class="timeline-block">
+			<div class="timeline-img location">
+				<img src="img/icon-location.svg" alt="Location">
+			</div>
+
+			<div class="timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<span class="date">Feb 14</span>
+			</div>
+		</div> 
+        <!-- ************************************************************************************************************************ -->
+        </div>
+	</section>
+
+<!-- ================================================================================================================================================================================================================================================ -->
+
+    <section id="section3" class="works">
+        <div class="icon-item square hoverEffect top_to_bottom icon-trans">
+            <div class="img"><i class="fa fa-code fa-3x"></i></div>
+            <div class="info">
+                <h3>Projects</h3>
+            </div>
+        </div>        
+        <div class="works-container container">            
+            <!-- SHOW IN EVENT OF TOUCH SCREEN -->
+            <div class="code-display">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <i class="fa fa-chevron-left fa-2x"></i>
+                    </div>
+                    <div class="col-xs-6">
+                        <i class="fa fa-chevron-right fa-2x"></i>
+                    </div>
+                </div>
+                
+                <div id="owl-code" class="owl-carousel">
+                    
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <img src="img/icons/web.png" width="35%">
+                        <button type="button" class="btn bt-default">Max Seiler Portfolio</button>
+                        <button type="button" class="btn bt-default">Ode to No One</button>
+                        <button type="button" class="btn bt-default">Online group chat</button>
+                    </div>
+                    
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <img src="img/icons/java.png" width="35%">
+                        <button type="button" class="btn bt-default">MazeSolver</button>
+                        <button type="button" class="btn bt-default">Game of Life</button>
+                        <button type="button" class="btn bt-default">Towers of Hanoi</button>
+                        <button type="button" class="btn bt-default">DFA Verifier</button>
+                        <button type="button" class="btn bt-default">PDA Verifier</button>
+                        <button type="button" class="btn bt-default">L.E.T.T.E.R</button>
+                        <button type="button" class="btn bt-default">DES Encryptor/Decryptor</button>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <img src="img/icons/python.png"  width="35%">
+                        <button type="button" class="btn bt-default">Tic-Tac-Toe</button>
+                        <button type="button" class="btn bt-default">Router Simulator</button>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <img src="img/icons/cpp.png" width="35%">
+                        <button type="button" class="btn bt-default">LongInteger Arithmetic</button>
+                    </div>
+                    <div class="btn-group-vertical" role="group" aria-label="...">
+                        <img src="img/icons/android.png" width="35%">
+                        <button type="button" class="btn bt-default">CS490 Project</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!--SHOW IN EVENT OF NON-TOUCH SCREEN/DESKTOP-->
+            <div class="graph-display">
+                <canvas id="viewport"></canvas>
+            </div>
+        </div>
+
+    </section>
+    
+<!-- ================================================================================================================================================================================================================================================ -->
+    
+    <section id="section4" class="know">
+        <div class="icon-item square hoverEffect top_to_bottom icon-trans">
+            <div class="img"><i class="fa fa-wrench fa-3x"> </i></div>
+            <div class="info">
+                <h3>Skills</h3>
+            </div>
+        </div>
+        
+        <div class="know-container vertical-center">
+            <ul id="skillbar" class="skills">
+                <li>
+                    <span data-width='90' class="progress">
+                        HTML (90%)
+                    </span>                    
+                </li>
+                <li>
+                    <span data-width='85' class="progress">
+                        CSS (85%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='50' class="progress">
+                        Responsive Design (50%)
+                    </span>
+                </li>
+                
+                <li>
+                    <span data-width='75' class="progress">
+                        Javascript (75%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='50' class="progress">
+                        jQuery (50%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='75' class="progress">
+                        WAMP / LAMP (75%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='85' class="progress">
+                        MySql (85%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='80' class="progress">
+                        PHP (80%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='90' class="progress">
+                        Java (90%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='70' class="progress">
+                        Android Development (70%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='70' class="progress">
+                        Hadoop (70%)
+                    </span>
+                </li>            
+                <li>
+                    <span data-width='65' class="progress">
+                        Python (65%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='50' class="progress">
+                        C (50%)
+                    </span>
+                </li>
+                <li>
+                    <span data-width='65' class="progress">
+                        C++ (65%)
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+<!-- ================================================================================================================================================================================================================================================ -->
+
+    <section id="section5" class="contact"> 
+        <div class="icon-item square hoverEffect top_to_bottom icon-trans">
+            <div class="img"><i class="fa fa-envelope fa-3x"> </i></div>
+            <div class="info">
+                <h3>Contact</h3>
+            </div>
+        </div>
+
+        <div class="contact-container container vertical-center">
+            <form action="mail-config.php" id="contact-form" class="contact-form" method="post" novalidate="novalidate">
+                <p>
+                    Your name (required)<br>
+                    <span><input type="text" name="name"    required autocomplete="on"></span>
+                </p>
+                <p>
+                    Your email (required)<br>
+                    <span><input type="email" name="email"   required autocomplete="on"></span>
+                </p>
+                <p>
+                    Subject<br>
+                    <span><input type="text" name="subject"></span>
+                </p>
+                <p>
+                    Message<br>
+                    <span><textarea type="text" name="message" cols="25" rows="10" aria-invalid="false"></textarea></span>
+                </p>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com/das_meat_tree"                         target="_blank"><i class="fa fa-twitter-square      fa-3x"></i></a>
+            <a href="https://plus.google.com/u/0/105253055491556440237/posts"   target="_blank"><i class="fa fa-google-plus-square  fa-3x"></i></a>
+            <a href="https://github.com/phreakradio"                            target="_blank"><i class="fa fa-github-square       fa-3x"></i></a>            
+            <a href="https://linkedin.com/pub/dmytro-malaniouk/70/a37/760"      target="_blank"><i class="fa fa-linkedin-square     fa-3x"></i></a>
+            <a href="https://www.flickr.com/photos/hismajestytheguru"           target="_blank"><i class="fa fa-flickr              fa-3x"></i></a>
+            <a href="http://www.last.fm/user/dasMeatTree"                       target="_blank"><i class="fa fa-lastfm-square       fa-3x"></i></a>
+        </div>
+        <img src="img/logo1white.png" width="50" class="logo">
+        
+    </section>
+    
+</body>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="libraries/owl-carousel/owl.carousel.js"></script>
+    
+<script language="javascript" type="text/javascript" src="js/arbor.js"></script>
+<script language="javascript" type="text/javascript" src="js/arbor-tween.js"></script>
+<script language="javascript" type="text/javascript" src="js/graphics.js"></script>
+<script language="javascript" type="text/javascript" src="js/renderer.js"></script>
+<script language="javascript" type="text/javascript" src="js/arborNodes.js"></script>
+
+<script language="javascript" type="text/javascript" src="js/appear.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="libraries/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script>
+    
+
+    (function() {
+    var canvas = document.getElementById('viewport'), context = canvas.getContext('2d');
+    window.addEventListener('resize', resizeCanvas, false);
+
+    function resizeCanvas() 
+	{
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+})();
+    
+</script>
+</html>

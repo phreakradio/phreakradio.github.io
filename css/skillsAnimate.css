@@ -1,0 +1,38 @@
+.know ul.skills {
+	padding-top: 2%;
+	list-style: none;
+	margin: 10px auto 10px auto;
+	list-style-image: none;
+    width: 70%;    
+}
+.know ul.skills li {
+	background-image: none;
+/*	background-color: #10acc7;*/
+	background-color: #56636D;
+	padding: 0;
+    margin: 5px;
+	width: 100%;
+	color: #ccc;
+	font-weight: 800;
+	border-radius: 3px;
+	overflow: hidden;
+	height: 31px;
+	line-height: 32px;
+    text-align: left;
+}
+.know ul.skills li span {
+    opacity: 0;
+	display: block;
+	margin: 0 8px 0 0;
+	color: #fff;
+	width: 0px;
+    height: auto;
+	float: left;
+	font-weight: 500;
+	line-height: 22px;
+	border-radius:  3px 3px 3px 3px;
+}
+.know ul.skills li > span  {
+	background-color: grey;
+	padding: 5px 0 5px 13px;
+}
