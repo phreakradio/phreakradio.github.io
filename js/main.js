@@ -160,7 +160,7 @@ $(document).ready(function(){
     });
 
     $('#contact-form').submit(function(){
-        var url = "mail-config.php";
+        var url = "http://web.njit.edu/~dm282/mail-config.php";
         
         $.ajax({
             type:"POST",
