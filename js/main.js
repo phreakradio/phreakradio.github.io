@@ -16,10 +16,12 @@ $(document).ready(function(){
     //IF NOT ON MOBILE, SHOW GRAPH
     if (!isMobile.any())
         $('.code-display').hide();
+        $('#works-container').removeClass('container');
     //ELSE SHOW CAROUSEL
     if (isMobile.any()){
+        $('#works-container').addClass('container');
         $("#owl-code").owlCarousel();
-        $('.graph-display').hide();
+        $('.graph-display').hide();        
     }
     
     
@@ -164,8 +166,25 @@ $(document).ready(function(){
             type:"POST",
             url:url,
             data:$("#contact-form").serialize(),
-            success: function(data){
-                alert("Message sent");
+            success: function(data)
+            {
+                if(data == "Success")
+                {
+                    $('#confirmation').html('<i style="color:lime; padding:5px" class="fa fa-check-circle-o fa-2x"></i>'+
+                                            '<span style="font-size:2vh; position:relative; color:lime; top:-5px;">Message sent</span>').slideDown(500).delay(2000).slideUp(500);
+                }
+                else
+                {
+                    $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
+                                            '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Try an alternative below.</span>').slideDown(500).delay(2000).slideUp(500);
+                }
+            },
+            statusCode:
+            {
+                404:function(){
+                    $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
+                                            '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Try an alternative below.</span>').slideDown(500).delay(2000).slideUp(500);
+                }
             }
         });
         

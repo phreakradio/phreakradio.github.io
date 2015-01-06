@@ -1,0 +1,71 @@
+.icon-item.square.hoverEffect {
+    overflow: hidden;
+}
+.icon-item.square.hoverEffect .img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.icon-item.square.hoverEffect .info {
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.icon-item.square.hoverEffect .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align:center;    
+    font-size: 17px;
+    padding: 10px;
+    margin: 1px 0 0 0;
+}
+.icon-item.square.hoverEffect:hover .info {
+    visibility: visible;
+    opacity: 1;
+}        
+.icon-item {
+    position: relative;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.icon-item.square {
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 50%;    
+}
+.icon-item.square .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.icon-item.square.hoverEffect.top_to_bottom .img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
+.icon-item.square.hoverEffect.top_to_bottom .info {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+.icon-item.square.hoverEffect.top_to_bottom:hover .img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.icon-item.square.hoverEffect.top_to_bottom:hover .info {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
+
+

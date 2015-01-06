@@ -19,8 +19,8 @@
 
 <!--	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->    
+	<link rel="stylesheet" href="css/about/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/about/style.css"> <!-- Resource style -->    
     <link rel="stylesheet" href="libraries/font-awesome-4.2.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="libraries/bootstrap-3.2.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">    
@@ -218,7 +218,7 @@
                 <h3>Projects</h3>
             </div>
         </div>        
-        <div class="works-container container">            
+        <div id="works-container" class="works-container">            
             <!-- SHOW IN EVENT OF TOUCH SCREEN -->
             <div class="code-display">
                 <div class="row">
@@ -234,33 +234,33 @@
                     
                     <div class="btn-group-vertical" role="group" aria-label="...">
                         <img src="img/icons/web.png" width="35%">
-                        <button type="button" class="btn bt-default">Max Seiler Portfolio</button>
-                        <button type="button" class="btn bt-default">Ode to No One</button>
-                        <button type="button" class="btn bt-default">Online group chat</button>
+                        <button type="button" class="btn bt-default"><a href="http://maxseiler.com/" target="_blank">Max Seiler Portfolio</a></button>
+                        <button type="button" class="btn bt-default"><a href="http://web.njit.edu/~dm282/OdeToNoOne/" target="_blank">Ode to No One</a></button>
+                        <button type="button" class="btn bt-default"><a href="http://web.njit.edu/~dm282/IT202/assignment4/index.html" target="_blank">Online group chat</a></button>
                     </div>
                     
                     <div class="btn-group-vertical" role="group" aria-label="...">
                         <img src="img/icons/java.png" width="35%">
-                        <button type="button" class="btn bt-default">MazeSolver</button>
-                        <button type="button" class="btn bt-default">Game of Life</button>
-                        <button type="button" class="btn bt-default">Towers of Hanoi</button>
-                        <button type="button" class="btn bt-default">DFA Verifier</button>
-                        <button type="button" class="btn bt-default">PDA Verifier</button>
-                        <button type="button" class="btn bt-default">L.E.T.T.E.R</button>
-                        <button type="button" class="btn bt-default">DES Encryptor/Decryptor</button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/MazeSolver"            target="_blank">MazeSolver</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/Conways-Game-Of-Life"  target="_blank">Game of Life</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/Towers-of-Hanoi"       target="_blank">Towers of Hanoi</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/DFA-Verifier"          target="_blank">DFA Verifier</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/PDA-Verfier"           target="_blank">PDA Verifier</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/LETTER"                target="_blank">L.E.T.T.E.R</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/DES-Example-in-Java"   target="_blank">DES Encryptor/Decryptor</a></button>
                     </div>
                     <div class="btn-group-vertical" role="group" aria-label="...">
                         <img src="img/icons/python.png"  width="35%">
-                        <button type="button" class="btn bt-default">Tic-Tac-Toe</button>
-                        <button type="button" class="btn bt-default">Router Simulator</button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/TicTacToe"             target="_blank">Tic-Tac-Toe</a></button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/Router_simulator"      target="_blank">Router Simulator</a></button>
                     </div>
                     <div class="btn-group-vertical" role="group" aria-label="...">
                         <img src="img/icons/cpp.png" width="35%">
-                        <button type="button" class="btn bt-default">LongInteger Arithmetic</button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/phreakradio/LongInteger-Arithmetic-functions" target="_blank">LongInteger Arithmetic</a></button>
                     </div>
                     <div class="btn-group-vertical" role="group" aria-label="...">
                         <img src="img/icons/android.png" width="35%">
-                        <button type="button" class="btn bt-default">CS490 Project</button>
+                        <button type="button" class="btn bt-default"><a href="https://github.com/hkajur/Code_Testing/tree/master/MobileApp/CS490ProjectRelease" target="_blank">CS490 Project</a></button>
                     </div>
                 </div>
                 
@@ -268,8 +268,10 @@
             </div>
             
             <!--SHOW IN EVENT OF NON-TOUCH SCREEN/DESKTOP-->
-            <div class="graph-display">
-                <canvas id="viewport"></canvas>
+            <div id="graph-display" class="graph-display">
+                
+<!--                <img src="http://devimg.com/500x308" width="500" height="308">-->
+                <canvas id="viewport" style="position:relative; left:0px;"></canvas>
             </div>
         </div>
 
@@ -390,7 +392,15 @@
                     Message<br>
                     <span><textarea type="text" name="message" cols="25" rows="10" aria-invalid="false"></textarea></span>
                 </p>
+                
                 <input type="submit" value="Send">
+                
+                <div id="confirmation" style="margin-left:auto; margin-right:auto; width:90%; text-align:center;display:none">
+                </div>
+                
+                
+                
+                
             </form>
         </div>
         <div class="social-icons">
@@ -401,7 +411,7 @@
             <a href="https://www.flickr.com/photos/hismajestytheguru"           target="_blank"><i class="fa fa-flickr              fa-3x"></i></a>
             <a href="http://www.last.fm/user/dasMeatTree"                       target="_blank"><i class="fa fa-lastfm-square       fa-3x"></i></a>
         </div>
-        <img src="img/logo1white.png" width="50" class="logo">
+<!--        <img src="img/logo1white.png" width="50" class="logo">-->
         
     </section>
     
@@ -428,16 +438,20 @@
     
 
     (function() {
-    var canvas = document.getElementById('viewport'), context = canvas.getContext('2d');
-    window.addEventListener('resize', resizeCanvas, false);
+        var canvas = document.getElementById('viewport'), context = canvas.getContext('2d');
+        window.addEventListener('resize', resizeCanvas, false);
 
-    function resizeCanvas() 
-	{
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-    }
-    resizeCanvas();
-})();
+        function resizeCanvas() 
+        {
+            
+            canvas.width = $("#graph-display").width();;
+            canvas.height = $("#graph-display").height();;
+//            canvas.width = window.innerWidth-20;
+//            canvas.height = window.innerHeight-20;
+        }
+        
+        resizeCanvas();
+    })();
     
 </script>
 </html>

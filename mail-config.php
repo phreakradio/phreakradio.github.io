@@ -9,14 +9,12 @@ $headers = 'From: '. $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $message, $headers);
+$message = "THIS MESSAGE SENT FROM THE WEBSITE: dmalaniouk.com\n\n" . $message;
 
+if(mail($to, $subject, $message, $headers))
+    echo "Success";
+else
+    echo "Error";
 
-
-
-//$message."\n\n This message sent to you by ".$email;
-//
-//if(mail('dmalaniouk@gmail.com',$subject, $message))
-//    echo "done";
 
 ?>
