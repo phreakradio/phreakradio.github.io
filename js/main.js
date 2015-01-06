@@ -185,6 +185,10 @@ $(document).ready(function(){
                     $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
                                             '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Try an alternative below.</span>').slideDown(500).delay(2000).slideUp(500);
                 }
+                405:function(){
+                    $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
+                                            '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Messaging suspended</span>').slideDown(500).delay(2000).slideUp(500);
+                }
             }
         });
         
