@@ -165,7 +165,7 @@ $(document).ready(function(){
         $.ajax({
             type:"POST",
             url:url,
-            data:$("#contact-form").serialize(),
+            data:{$("#contact-form").serialize(),
             success: function(data)
             {
                 if(data == "Success")
