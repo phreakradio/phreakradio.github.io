@@ -160,12 +160,12 @@ $(document).ready(function(){
     });
 
     $('#contact-form').submit(function(){
-        var url = "http://web.njit.edu/~dm282/mail-config.php";
+        var url = "mail-config.php";
         
         $.ajax({
             type:"POST",
             url:url,
-            data:{$("#contact-form").serialize(),
+            data:$("#contact-form").serialize(),
             success: function(data)
             {
                 if(data == "Success")
@@ -184,10 +184,6 @@ $(document).ready(function(){
                 404:function(){
                     $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
                                             '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Try an alternative below.</span>').slideDown(500).delay(2000).slideUp(500);
-                },
-                405:function(){
-                    $('#confirmation').html('<i style="color:red; padding:5px" class="fa fa-times fa-3x"></i>'+
-                                            '<span style="font-size:2vh; color:pink;position:relative; top:-7px;">Messaging suspended</span>').slideDown(500).delay(2000).slideUp(500);
                 }
             }
         });

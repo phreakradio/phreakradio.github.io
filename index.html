@@ -16,15 +16,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <meta http-equiv="refresh" content="0; url=http://example.com/" />-->
-    
+
 <!--	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
 
-	<link rel="stylesheet" href="css/about/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/about/style.css"> <!-- Resource style -->    
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->    
     <link rel="stylesheet" href="libraries/font-awesome-4.2.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="libraries/bootstrap-3.2.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">    
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">    -->
     <link rel="stylesheet" href="libraries/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="libraries/owl-carousel/owl.theme.css">
     
@@ -65,7 +64,17 @@
                     <span id="tag">Developer, Netflix Enthusiast, Human Being</span>
                 </div>
                 <div ng-view class="col-xs-2"></div>
-            </div>            
+            </div>
+                <div class="row social-icons">
+                    <div ng-view class="col-xs-12">
+                    <a href="https://twitter.com/das_meat_tree"                         target="_blank"><i class="fa fa-twitter-square      fa-3x"></i></a>
+                    <a href="https://plus.google.com/u/0/105253055491556440237/posts"   target="_blank"><i class="fa fa-google-plus-square  fa-3x"></i></a>
+                    <a href="https://github.com/phreakradio"                            target="_blank"><i class="fa fa-github-square       fa-3x"></i></a>            
+                    <a href="https://linkedin.com/pub/dmytro-malaniouk/70/a37/760"      target="_blank"><i class="fa fa-linkedin-square     fa-3x"></i></a>
+                    <a href="https://www.flickr.com/photos/hismajestytheguru"           target="_blank"><i class="fa fa-flickr              fa-3x"></i></a>
+                    <a href="http://www.last.fm/user/dasMeatTree"                       target="_blank"><i class="fa fa-lastfm-square       fa-3x"></i></a>
+                        </div>
+                </div>
             <a href="#section1" class="arrow-down scroll-down"></a>
         </div>
     </header>
@@ -116,47 +125,34 @@
         </div>
         
         <div class="timeline-container">
-            <!-- ************************************************************************************************************************ -->            
-            <div class="timeline-block">
-                <div class="timeline-img school">
-                    <img src="img/library.svg" alt="school">
-                </div>
-                
-                <div class="timeline-content">
-                 
-                    <!--MAYBE INCLUDE A LOGO HERE OR SOMETHING-->
-                 
-                    <h2>NJIT</h2>
-				    <p>
-                        B.S Computer Science<br>
-                        Albert Dorman Honor's College Scholar<br>
-                    </p>
-                    <span class="date">Sept 2011 - May 2014</span>
-                </div>
-            </div> 
-            
             <!-- ************************************************************************************************************************ -->
-            
+
             <div class="timeline-block">
-                <div class="timeline-img verizon">
-                    <img src="img/cabinet.svg" alt="verizon">
-                </div>
-                
+                <div class="timeline-img mainframe">
+                    <img src="img/cabinet.svg" alt="mainframe">
+                </div> 
+              
                 <div class="timeline-content">
-                    <h2>Verizon Wireless</h2>
-                    <p>
-                        IT Intern (POS team)
-                    </p>
-                    <ul>
-                        <li>Developed web apps for server performance</li>
-                        <li>Developed Python scripts to generated Erate reporting</li>
-                        <li>Generated reports for Telesales support using Python</li>
-                        <li>Developed PHP app for team reporting</li>
-                    </ul>
-                    <span class="date">June 2013 - Aug 2013</span>
-                </div>
+                    <h2>IBM</h2>
+				    <p>Software Engineer</p>
+                    <span class="date">July 2015 - Present</span>
+                </div> 
             </div>
             
+            <!-- ************************************************************************************************************************ -->
+
+            <div class="timeline-block">
+                <div class="timeline-img mobile">
+                    <img src="img/mobile.svg" alt="phone">
+                </div> 
+              
+                <div class="timeline-content">
+                    <h2>NomNoms</h2>
+				    <p>Creator / Lead Systems Developer / Lead Android Developer </p>
+                    <span class="date">October 2014 - Present</span>
+                </div> 
+            </div>
+        
             <!-- ************************************************************************************************************************ -->
             
             <div class="timeline-block">
@@ -180,19 +176,49 @@
             </div>
             
             <!-- ************************************************************************************************************************ -->
+            
             <div class="timeline-block">
-                <div class="timeline-img location">
-                    <img src="img/food.svg" alt="Location">
-                </div> 
-              
+                <div class="timeline-img verizon">
+                    <img src="img/sphere.svg" alt="verizon">
+                </div>
+                
                 <div class="timeline-content">
-                    <h2>NomNoms</h2>
-				    <p>Creator / Lead Systems Developer / Lead Android Developer </p>
-                    <span class="date">October 2014 - Present</span>
-                </div> 
+                    <h2>Verizon Wireless</h2>
+                    <p>
+                        IT Intern (POS team)
+                    </p>
+                    <ul>
+                        <li>Developed web apps for server performance</li>
+                        <li>Developed Python scripts to generated Erate reporting</li>
+                        <li>Generated reports for Telesales support using Python</li>
+                        <li>Developed PHP app for team reporting</li>
+                    </ul>
+                    <span class="date">June 2013 - Aug 2013</span>
+                </div>
             </div>
-        
-        <!-- ************************************************************************************************************************ -->
+            
+            
+            <!-- ************************************************************************************************************************ --> 
+
+            <div class="timeline-block">
+                <div class="timeline-img school">
+                    <img src="img/library.svg" alt="school">
+                </div>
+                
+                <div class="timeline-content">
+                 
+                    <!--MAYBE INCLUDE A LOGO HERE OR SOMETHING-->
+                 
+                    <h2>NJIT</h2>
+				    <p>
+                        B.S Computer Science<br>
+                        Albert Dorman Honor's College Scholar<br>
+                    </p>
+                    <span class="date">Sept 2011 - May 2014</span>
+                </div>
+            </div> 
+            
+            <!-- ************************************************************************************************************************ -->             
     
         <!-- TEMPLATE======================================================================================================================== -
 		<div class="timeline-block">
@@ -279,6 +305,27 @@
     </section>
     
 <!-- ================================================================================================================================================================================================================================================ -->
+
+    
+<!--
+HTML 2007 - present
+css 2010 - present
+js 2011 - present
+mysql 2013 - present
+php 2012 - 2014
+java 2012 - present
+python 2011 - 2013
+c++ 2013 - 2014
+c - 2013 - 2014
+*/
+
+/*platforms
+Jquery 2012 - 2014
+android development 2013 - present
+responsive design 2013 - present
+WAMP / LAMP 2013 - present
+Hadoop 2014 - 2014    
+-->
     
     <section id="section4" class="know">
         <div class="icon-item square hoverEffect top_to_bottom icon-trans">
@@ -289,83 +336,82 @@
         </div>
         
         <div class="know-container vertical-center">
+            <ul>
+                <li style="color:white; left:200px; position:absolute; margin:0; padding:0; margin-top:-250px">2007</li>
+                <li style="color:white; right:200px; position:absolute; margin:0; padding:0; margin-top:-250px">Present</li>
+            </ul>
             <ul id="skillbar" class="skills">
                 <li>
-                    <span data-width='90' class="progress">
-                        HTML (90%)
+                    <span data-width='100' class="progress">
+                        HTML
                     </span>                    
                 </li>
                 <li>
-                    <span data-width='85' class="progress">
-                        CSS (85%)
+                    <span data-width='62.5' class="progress" style="margin-left:26.25vw;">
+                        CSS
                     </span>
                 </li>
                 <li>
-                    <span data-width='50' class="progress">
-                        Responsive Design (50%)
+                    <span data-width='25' class="progress" style="margin-left:52.5vw;">
+                        Responsive Design
                     </span>
                 </li>
                 
                 <li>
-                    <span data-width='75' class="progress">
-                        Javascript (75%)
+                    <span data-width='50' class="progress" style="margin-left:35vw;">
+                        Javascript
                     </span>
                 </li>
                 <li>
-                    <span data-width='50' class="progress">
-                        jQuery (50%)
+                    <span data-width='25' class="progress" style="margin-left:43.75vw;">
+                        jQuery
                     </span>
                 </li>
                 <li>
-                    <span data-width='75' class="progress">
-                        WAMP / LAMP (75%)
+                    <span data-width='25' class="progress" style="margin-left:52.5vw;">
+                        WAMP / LAMP
                     </span>
                 </li>
                 <li>
-                    <span data-width='85' class="progress">
-                        MySql (85%)
+                    <span data-width='25' class="progress" style="margin-left:52.5vw;">
+                        MySql
                     </span>
                 </li>
                 <li>
-                    <span data-width='80' class="progress">
-                        PHP (80%)
+                    <span data-width='25' class="progress" style="margin-left:43.75vw;">
+                        PHP
                     </span>
                 </li>
                 <li>
-                    <span data-width='90' class="progress">
-                        Java (90%)
+                    <span data-width='38' class="progress" style="margin-left:52.5vw;">
+                        Java
                     </span>
                 </li>
                 <li>
-                    <span data-width='70' class="progress">
-                        Android Development (70%)
+                    <span data-width='25' class="progress" style="margin-left:52.5vw;">
+                        Android App Development
                     </span>
                 </li>
                 <li>
-                    <span data-width='70' class="progress">
-                        Hadoop (70%)
-                    </span>
-                </li>            
-                <li>
-                    <span data-width='65' class="progress">
-                        Python (65%)
+                    <span data-width='25' class="progress" style="margin-left:35vw;">
+                        Python
                     </span>
                 </li>
                 <li>
-                    <span data-width='50' class="progress">
-                        C (50%)
+                    <span data-width='12.5' class="progress" style="margin-left:52.5vw;">
+                        C
                     </span>
                 </li>
                 <li>
-                    <span data-width='65' class="progress">
-                        C++ (65%)
+                    <span data-width='12.5' class="progress" style="margin-left:52.5vw;">
+                        C++
                     </span>
                 </li>
             </ul>
         </div>
     </section>
     
-<!-- ================================================================================================================================================================================================================================================ -->
+<!-- ================================================================================================================================================================================================================================================ ->
 
     <section id="section5" class="contact"> 
         <div class="icon-item square hoverEffect top_to_bottom icon-trans">
@@ -374,13 +420,8 @@
                 <h3>Contact</h3>
             </div>
         </div>
-        <br>
-        <center>Email capabilities currently suspended. Github can only do so much.<br> 
-            Consider an alternative method of communication below.<br><br>
-            <i class="fa fa-arrow-down fa-5x"></i>
-        </center>
-        <div class="contact-container container vertical-center">            
-            <!--
+
+        <div class="contact-container container vertical-center">
             <form action="mail-config.php" id="contact-form" class="contact-form" method="post" novalidate="novalidate">
                 <p>
                     Your name (required)<br>
@@ -404,24 +445,18 @@
                 <div id="confirmation" style="margin-left:auto; margin-right:auto; width:90%; text-align:center;display:none">
                 </div>
                 
+                
+                
+                
             </form>
--->
         </div>
-        <div class="social-icons">
-            <a href="https://twitter.com/das_meat_tree"                         target="_blank"><i class="fa fa-twitter-square      fa-3x"></i></a>
-            <a href="https://plus.google.com/u/0/105253055491556440237/posts"   target="_blank"><i class="fa fa-google-plus-square  fa-3x"></i></a>
-            <a href="https://github.com/phreakradio"                            target="_blank"><i class="fa fa-github-square       fa-3x"></i></a>            
-            <a href="https://linkedin.com/pub/dmytro-malaniouk/70/a37/760"      target="_blank"><i class="fa fa-linkedin-square     fa-3x"></i></a>
-            <a href="https://www.flickr.com/photos/hismajestytheguru"           target="_blank"><i class="fa fa-flickr              fa-3x"></i></a>
-            <a href="http://www.last.fm/user/dasMeatTree"                       target="_blank"><i class="fa fa-lastfm-square       fa-3x"></i></a>
-        </div>
-<!--        <img src="img/logo1white.png" width="50" class="logo">-->
+<--        <img src="img/logo1white.png" width="50" class="logo">-->
         
-    </section>
+    </section-->
     
 </body>
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="libraries/jquery-2.1.1.js"></script>
 
 <script src="libraries/owl-carousel/owl.carousel.js"></script>
     
@@ -434,7 +469,7 @@
 <script language="javascript" type="text/javascript" src="js/appear.js"></script>
 <script src="js/main.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
 <script src="libraries/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
 <script src="js/modernizr.js"></script>
 
